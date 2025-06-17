@@ -1,0 +1,32 @@
+/*  Bootstrap'ta dropdown butonunun sağındaki oku gizler.*/
+.dropdown-toggle::after {
+  display: none;
+}
+/* Görevlerin olduğu li elemanlarının içeriğini yatay hizalar, iki uca yerleştirir.*/
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/*Görev tamamlandıysa üzerini çizer.*/
+.task label.checked {
+  text-decoration: line-through;
+}
+/*Filtre ve temizle butonunu aynı hizaya getirir*/
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Aktif filtre (örneğin "Tümü") vurgulanır.*/
+.filters span.active {
+  background-color: gold;
+  padding: 8px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+/*Filtre başlıkları yan yana durur ve tıklanabilir olur.*/
+.filters span {
+  margin-right: 8px;
+  cursor: pointer;
+}
